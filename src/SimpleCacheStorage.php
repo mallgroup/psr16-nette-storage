@@ -23,7 +23,7 @@ class SimpleCacheStorage implements Storage, BulkReader
 		MetaDelta = 'delta';
 
 	public function __construct(
-		private readonly CacheInterface $cache
+		private CacheInterface $cache
 	) {
 	}
 
