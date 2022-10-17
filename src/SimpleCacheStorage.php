@@ -48,7 +48,6 @@ class SimpleCacheStorage implements Storage, BulkReader
 		}
 
 		return $meta[self::MetaData];
-
 	}
 
 	public function lock(string $key): void
