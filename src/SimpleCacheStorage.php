@@ -107,7 +107,6 @@ class SimpleCacheStorage implements Storage, BulkReader
 	 */
 	public function bulkRead(array $keys): array
 	{
-		/** @phpstan-ignore-next-line */
 		$strKeys = array_map(static fn($key): string => (string) $key, $keys);
 		$keys = array_combine($strKeys, $keys);
 
